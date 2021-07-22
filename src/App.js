@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import "./App.css";
 import Header from "./Header";
+import TinderCards from "./TinderCards";
 function App() {
   return (
     <div className="App">
@@ -12,7 +13,7 @@ function App() {
         </Switch>
         <Switch>
           <Route exact strict path="/">
-            I am homepage
+            <TinderCards />
           </Route>
         </Switch>
       </Router>
